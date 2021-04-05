@@ -24,12 +24,12 @@
             };
             combo_esc {
                 timeout-ms = <75>;
-                key-positions = <1 2 3>;
+                key-positions = <1 5>;
                 bindings = <&kp ESC>;
             }; 
             combo_ret {
                 timeout-ms = <75>;
-                key-positions = <28 29>;
+                key-positions = <25 29>;
                 bindings = <&kp RET>;
             };
     };
