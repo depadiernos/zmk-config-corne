@@ -19,7 +19,7 @@
             };
             combo_tab {
                 timeout-ms = <75>;
-                key-positions = <13 14>;
+                key-positions = <13 17>;
                 bindings = <&kp TAB>;
             };
             combo_esc {
