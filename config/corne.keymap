@@ -56,7 +56,7 @@
     &trans   &kp N1       &kp N2      &kp N3      &kp N4       &kp N5       &trans   &kp HOME        &kp PG_DN      &kp PG_UP    &kp END         &trans
     &trans   &hm LCTRL N6 &hm LGUI N7 &hm LALT N8 &hm LSHFT N9 &kp N0       &trans   &hm RSHFT LEFT  &hm RALT DOWN  &hm RGUI UP  &hm LCTRL RIGHT &trans
     &trans   &kp MINUS    &kp EQUAL   &kp LBKT    &kp RBKT     &kp BSLH     &trans   &trans    &trans    &trans    &trans    &trans
-                                      &tans       &trans       &trans       &mo 3    &trans    &trans
+                                      &trans      &trans       &trans       &mo 3    &trans    &trans
                         >;
                 };
 
@@ -65,7 +65,7 @@
     &trans   &kp N1       &kp N2      &kp N3      &kp N4       &kp N5       &trans   &kp HOME        &kp PG_DN      &kp PG_UP    &kp END         &trans
     &trans   &hm LCTRL N6 &hm LGUI N7 &hm LALT N8 &hm LSHFT N9 &kp N0       &trans   &hm RSHFT LEFT  &hm RALT DOWN  &hm RGUI UP  &hm LCTRL RIGHT &trans
     &trans   &kp MINUS    &kp EQUAL   &kp LBKT    &kp RBKT     &kp BSLH     &trans   &trans    &trans    &trans    &trans    &trans
-                                      &kp ESC     &trans       &trans       &mo 3    &trans    &trans
+                                      &trans      &trans       &mo 3        &trans   &trans    &trans
                         >;
                 };
 
