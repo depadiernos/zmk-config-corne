@@ -15,7 +15,7 @@
             combo_3 {
                 timeout-ms = <75>;
                 key-positions = <37 38>;
-                bindings = <&sl 3>;
+                bindings = <&sl 2>;
             };
             combo_tab {
                 timeout-ms = <75>;
