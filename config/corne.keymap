@@ -39,9 +39,9 @@
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS";
                 #binding-cells = <2>;
-                tapping-term-ms = <140>;
+                tapping-term-ms = <200>;
                 quick_tap_ms = <0>;
-                flavor = "tap-preferred";
+                flavor = "balanced";
                 bindings = <&kp>, <&kp>;
             };
     };
@@ -51,7 +51,7 @@
                 default_layer {
                         bindings = <
     &kp Q       &kp W      &kp E            &kp R         &kp T             &kp Y     &kp U       &kp I      &kp O       &kp P 
-    &hm LCTRL A &hm LGUI S &hm LALT D       &hm LSHFT F   &kp G             &kp H     &hm RSHFT J &hm RALT K &hm RGUI L  &hm LCTRL SEMI
+    &hm LCTRL A &hm LALT S &hm LGUI D       &hm LSHFT F   &kp G             &kp H     &hm RSHFT J &hm RGUI K &hm RALT L  &hm LCTRL SEMI
     &kp Z       &kp X      &kp C            &kp V         &kp B             &kp N     &kp M       &kp COMMA  &kp DOT     &kp FSLH
                            &mt LSHFT GRAVE  &mo 1         &kp BSPC          &kp SPACE &lt 1 RET   &kp SQT
                         >;
@@ -60,7 +60,7 @@
                 lower_layer {
                         bindings = <
     &kp N1       &kp N2      &kp N3      &kp N4       &kp N5       &trans   &kp HOME       &kp PG_DN     &kp PG_UP    &kp END         
-    &hm LCTRL N6 &hm LGUI N7 &hm LALT N8 &hm LSHFT N9 &kp N0       &trans   &hm RSHFT LEFT &hm RALT DOWN &hm RGUI UP  &hm LCTRL RIGHT 
+    &hm LCTRL N6 &hm LALT N7 &hm LGUI N8 &hm LSHFT N9 &kp N0       &trans   &hm RSHFT LEFT &hm RGUI DOWN &hm RALT UP  &hm LCTRL RIGHT 
     &kp MINUS    &kp EQUAL   &kp LBKT    &kp RBKT     &kp BSLH     &trans   &kp C_MUTE     &kp C_VOL_DN  &kp C_VOL_UP &trans
                              &trans      &trans       &kp DEL      &trans   &trans   &trans
                         >;
