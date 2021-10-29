@@ -40,7 +40,7 @@
             };
             homerow_shft_l {
                 timeout-ms = <75>;
-                key-positions = <10 14>;
+                key-positions = <13 32>;
                 bindings = <&sk LSHFT>;
             };
             homerow_ctrl_r {
