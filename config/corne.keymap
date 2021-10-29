@@ -13,15 +13,55 @@
 
         combos {
             compatible = "zmk,combos";
-            combo_3 {
+            combo_3_l {
                 timeout-ms = <75>;
                 key-positions = <31 32>;
-                bindings = <&sl 2>;
+                bindings = <&mo 2>;
             };
-            combo_3_right {
+            combo_3_r {
                 timeout-ms = <75>;
                 key-positions = <33 34>;
-                bindings = <&sl 2>;
+                bindings = <&mo 2>;
+            };
+            homerow_ctrl_l {
+                timeout-ms = <75>;
+                key-positions = <10 32>;
+                bindings = <&sk LCTRL>;
+            };
+            homerow_alt_l {
+                timeout-ms = <75>;
+                key-positions = <11 32>;
+                bindings = <&sk LALT>;
+            };
+            homerow_gui_l {
+                timeout-ms = <75>;
+                key-positions = <12 32>;
+                bindings = <&sk LGUI>;
+            };
+            homerow_shft_l {
+                timeout-ms = <75>;
+                key-positions = <10 14>;
+                bindings = <&sk LSHFT>;
+            };
+            homerow_ctrl_r {
+                timeout-ms = <75>;
+                key-positions = <19 33>;
+                bindings = <&sk LCTRL>;
+            };
+            homerow_alt_r {
+                timeout-ms = <75>;
+                key-positions = <18 33>;
+                bindings = <&sk LALT>;
+            };
+            homerow_gui_r {
+                timeout-ms = <75>;
+                key-positions = <17 33>;
+                bindings = <&sk LGUI>;
+            };
+            homerow_shft_r {
+                timeout-ms = <75>;
+                key-positions = <16 33>;
+                bindings = <&sk LSHFT>;
             };
             combo_tab {
                 timeout-ms = <75>;
@@ -50,28 +90,28 @@
 
                 default_layer {
                         bindings = <
-    &kp Q       &kp W      &kp E            &kp R         &kp T         &kp Y     &kp U       &kp I      &kp O            &kp P 
-    &kp A       &kp S      &kp D            &kp F         &kp G         &kp H     &kp J       &kp K          &kp L        &kp SEMI
-    &hm LCTRL Z &hm LALT X &hm LGUI C       &hm LSHFT V   &kp B         &kp N     &hm RSHFT M &hm RGUI COMMA &hm RALT DOT &hm LCTRL FSLH
-                           &mt LSHFT GRAVE  &mo 1         &kp BSPC      &kp SPACE &lt 1 RET   &kp SQT
+    &kp Q &kp W &kp E     &kp R &kp T    &kp Y     &kp U &kp I     &kp O   &kp P 
+    &kp A &kp S &kp D     &kp F &kp G    &kp H     &kp J &kp K     &kp L   &kp SEMI
+    &kp Z &kp X &kp C     &kp V &kp B    &kp N     &kp M &kp COMMA &kp DOT &kp FSLH
+                &kp GRAVE &mo 1 &kp BSPC &kp SPACE &lt 1 RET       &kp SQT
                         >;
                 };
 
                 lower_layer {
                         bindings = <
-    &kp N1          &kp N2         &kp N3        &kp N4         &kp N5     &trans   &kp HOME         &kp PG_DN         &kp PG_UP         &kp END         
-    &kp N6          &kp N7         &kp N8        &kp N9         &kp N0     &trans   &kp LEFT         &kp DOWN          &kp UP            &kp RIGHT
-    &hm LCTRL MINUS &hm LALT EQUAL &hm LGUI LBKT &hm LSHFT RBKT &kp BSLH   &trans   &hm RSHFT C_MUTE &hm RGUI C_VOL_DN &hm RALT C_VOL_UP &hm LCTRL FSLH 
-                             &trans      &trans       &kp DEL      &trans   &trans   &trans
+    &kp N1    &kp N2    &kp N3   &kp N4   &kp N5   &kp C_VOL_UP &kp HOME &kp PG_DN    &kp PG_UP  &kp END         
+    &kp N6    &kp N7    &kp N8   &kp N9   &kp N0   &kp C_VOL_DN &kp LEFT &kp DOWN     &kp UP     &kp RIGHT
+    &kp MINUS &kp EQUAL &kp BSLH &kp LBKT &kp RBKT &kp C_MUTE   &bt BT_CLR &bt BT_PRV &bt BT_NXT &bt 0  
+                        &trans   &trans   &kp DEL  &trans       &trans     &trans
                         >;
                 };
 
                 adjust_layer {
                         bindings = <
-   &kp LS(N1)     &kp LS(N2)     &kp LS(N3)    &kp LS(N4)   &kp LS(N5)        &kp F1 &kp F2  &kp F3  &kp F4    &bt BT_CLR
-   &kp LS(N6)     &kp LS(N7)     &kp LS(N8)    &kp LS(N9)   &kp LS(N0)        &kp F5 &kp F6  &kp F7  &kp F8    &bt BT_NXT
-   &kp LS(MINUS)  &kp LS(EQUAL)  &kp LS(LBKT)  &kp LS(RBKT) &kp LS(BSLH)      &kp F9 &kp F10 &kp F11 &kp F12   &bt BT_PRV
-                                 &trans        &trans       &trans            &trans &trans  &trans
+   &kp LS(N1)    &kp LS(N2)    &kp LS(N3)   &kp LS(N4)   &kp LS(N5)   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+   &kp LS(N6)    &kp LS(N7)    &kp LS(N8)   &kp LS(N9)   &kp LS(N0)   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+   &kp LS(MINUS) &kp LS(EQUAL) &kp LS(BSLH) &kp LS(LBKT) &kp LS(RBKT) &kp F11 &kp F12 &kp F13 &kp F14 &kp F15
+                               &trans       &trans       &trans       &trans  &trans  &trans
                         >;
                 };
         };
