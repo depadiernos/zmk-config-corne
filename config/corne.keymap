@@ -13,6 +13,16 @@
 
         combos {
             compatible = "zmk,combos";
+            combo_tab {
+                timeout-ms = <75>;
+                key-positions = <10 14>;
+                bindings = <&kp TAB>;
+            };
+            combo_esc {
+                timeout-ms = <75>;
+                key-positions = <0 4>;
+                bindings = <&kp ESC>;
+            }; 
             combo_3_l {
                 timeout-ms = <75>;
                 key-positions = <31 32>;
@@ -25,54 +35,44 @@
             };
             homerow_ctrl_l {
                 timeout-ms = <75>;
-                key-positions = <10 31>;
+                key-positions = <10 20>;
                 bindings = <&sk LCTRL>;
             };
             homerow_alt_l {
                 timeout-ms = <75>;
-                key-positions = <11 31>;
+                key-positions = <11 21>;
                 bindings = <&sk LALT>;
             };
             homerow_gui_l {
                 timeout-ms = <75>;
-                key-positions = <12 31>;
+                key-positions = <12 22>;
                 bindings = <&sk LGUI>;
             };
             homerow_shft_l {
                 timeout-ms = <75>;
-                key-positions = <13 31>;
+                key-positions = <13 23>;
                 bindings = <&sk LSHFT>;
             };
             homerow_ctrl_r {
                 timeout-ms = <75>;
-                key-positions = <19 34>;
+                key-positions = <19 29>;
                 bindings = <&sk LCTRL>;
             };
             homerow_alt_r {
                 timeout-ms = <75>;
-                key-positions = <18 34>;
+                key-positions = <18 28>;
                 bindings = <&sk LALT>;
             };
             homerow_gui_r {
                 timeout-ms = <75>;
-                key-positions = <17 34>;
+                key-positions = <17 27>;
                 bindings = <&sk LGUI>;
             };
             homerow_shft_r {
                 timeout-ms = <75>;
-                key-positions = <16 34>;
+                key-positions = <16 26>;
                 bindings = <&sk LSHFT>;
             };
-            combo_tab {
-                timeout-ms = <75>;
-                key-positions = <10 14>;
-                bindings = <&kp TAB>;
-            };
-            combo_esc {
-                timeout-ms = <75>;
-                key-positions = <0 4>;
-                bindings = <&kp ESC>;
-            }; 
     };
         behaviors {
             hm: homerow_mods {
