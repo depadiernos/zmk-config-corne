@@ -16,12 +16,12 @@
             combo_3_l {
                 timeout-ms = <75>;
                 key-positions = <31 32>;
-                bindings = <&mo 2>;
+                bindings = <&sl 2>;
             };
             combo_3_r {
                 timeout-ms = <75>;
                 key-positions = <33 34>;
-                bindings = <&mo 2>;
+                bindings = <&sl 2>;
             };
             homerow_ctrl_l {
                 timeout-ms = <75>;
